@@ -1,0 +1,61 @@
+﻿<Window x:Class="MITCoffeShop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MITCoffeShop"
+        mc:Ignorable="d"
+       Title="MIT Coffee Shop" Height="400" Width="500" MinWidth="434" MinHeight="300" FontFamily="Century Gothic" ResizeMode="CanResizeWithGrip" WindowStyle="ToolWindow" Icon="C:\Users\MaaN\Documents\Visual Studio 2015\Projects\WpfApplication5\WpfApplication5\Resouces\MIT Logo Green.jpg" Activated="Window_Activated">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="58" ></RowDefinition>
+            <RowDefinition Height="25"></RowDefinition>
+            <RowDefinition />
+            <RowDefinition Height="42"></RowDefinition>
+
+        </Grid.RowDefinitions>
+        <Canvas Grid.Row="0" FlowDirection="RightToLeft" Background="#FFD52027" >
+            <Image Height="58"  Source="Resources\MIT Logo REd.jpg">
+
+            </Image>
+        </Canvas>
+
+        <Canvas Height="25" Grid.Row="1" Background="Black" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.RowSpan="2"/>
+        <Label Name="orderlbl" Content="Oreder Details" Grid.Row="1" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" >
+
+        </Label>
+        <StackPanel HorizontalAlignment="Left" Margin="5,22,0,3" Width="416" Grid.RowSpan="2" Grid.Row="1" >
+            <WrapPanel Orientation="Horizontal" Margin="0,0,-64,0">
+                <GroupBox Name="gpradio"  Header="Select Your Order" Height="250" Width="200" HorizontalAlignment="Left" Margin="0,10" >
+                    <WrapPanel Orientation="Vertical">
+                        <RadioButton Name="rd1" GroupName="gpradio" Content="Cappuccino" Margin="5" ></RadioButton>
+                        <RadioButton Name="rd2" GroupName="gpradio" Content="Latte" Margin="5" ></RadioButton>
+                        <RadioButton Name="rd3" GroupName="gpradio" Content="Espresso" Margin="5" ></RadioButton>
+                        <RadioButton Name="rd4" GroupName="gpradio" Content="Long Black" Margin="5" ></RadioButton>
+                        <RadioButton Name="rd5" GroupName="gpradio" Content="Tea" Margin="5" ></RadioButton>
+
+
+                    </WrapPanel>
+                </GroupBox>
+                <GroupBox Name="gpchk" Header="Select Your Order" Height="250" Width="200" HorizontalAlignment="Right">
+                    <WrapPanel Orientation="Vertical">
+                        <CheckBox Name="chk1" Content="Sugar" Margin="5"></CheckBox>
+                        <CheckBox Name="chk2" Content="Milk" Margin="5"></CheckBox>
+                        <CheckBox Name="chk3" Content="Chocolate" Margin="5"></CheckBox>
+                    </WrapPanel>
+                </GroupBox>
+                <Button Name="btn1" Content="PlaceOerder" Height="50"></Button>
+            </WrapPanel>
+        </StackPanel>
+        <WrapPanel Height="42" Grid.Row="3">
+            <Canvas>
+                <WrapPanel Orientation="Horizontal">
+                    <Image Height="42" Stretch="Fill"  Source="Resources\MIT Logo Green.jpg" Width="46" VerticalAlignment="Bottom" RenderTransformOrigin="0.436,0.111"/>
+                    <Label Name="lblchk" Content="BP.net (C)Copyright 2015 by MIT and all Students...."  Background="#FF015347"  HorizontalAlignment="Center"  VerticalAlignment="Bottom" Height="42" Width="445" />
+                </WrapPanel>
+
+            </Canvas>
+        </WrapPanel>
+    </Grid>
+</Window>
+

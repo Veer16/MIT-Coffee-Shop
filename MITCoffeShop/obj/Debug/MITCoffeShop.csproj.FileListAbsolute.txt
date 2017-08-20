@@ -1,0 +1,6 @@
+C:\Visual_studio_Work\MITCoffeShop\MITCoffeShop\bin\Debug\MITCoffeShop.exe.config
+C:\Visual_studio_Work\MITCoffeShop\MITCoffeShop\obj\Debug\MITCoffeShop.csprojResolveAssemblyReference.cache
+C:\Visual_studio_Work\MITCoffeShop\MITCoffeShop\obj\Debug\MainWindow.g.cs
+C:\Visual_studio_Work\MITCoffeShop\MITCoffeShop\obj\Debug\App.g.cs
+C:\Visual_studio_Work\MITCoffeShop\MITCoffeShop\obj\Debug\MITCoffeShop_MarkupCompile.cache
+C:\Visual_studio_Work\MITCoffeShop\MITCoffeShop\obj\Debug\MITCoffeShop_MarkupCompile.lref
